@@ -8,16 +8,22 @@ const Speakers = () => {
       role: 'AI Automation Engineer, Software Engineer &  DevOps Engineer ',
       image: 'speaker_peter.png', // Placeholder for generated image
       linkedin: 'https://www.linkedin.com/in/peter-otunuya-518a10271/',
+      link: "https://futurelab.ng"
     },
     {
       name: 'Bukola Gbemi',
       role: 'AI Strategist & Business Leader',
       image: 'speaker_bukola.png', // Placeholder
+      linkedin: "https://www.linkedin.com/in/bukolapeter-chukwusah/",
+      link: "https://futurelab.ng"
     },
     {
-      name: 'Gbemisola',
-      role: 'Machine Learning Engineer',
-      image: 'speaker_gbemi.jpeg', // Placeholder
+      name: 'Gbemisola Esho',
+      role: 'Google Developer Expert(GDE) Cloud',
+      image: 'speaker_gbemi.png',
+      link: "https://futurelab.ng" ,
+      linkedin: ""
+      // Placeholder
     }
   ];
 
@@ -40,12 +46,12 @@ const Speakers = () => {
               <p style={{ color: 'var(--primary)', marginBottom: '1.5rem', fontSize: '0.9rem', minHeight: '40px' }}>{speaker.role}</p>
               
               <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-                <a href="https://www.linkedin.com/in/peter-otunuya-518a10271/" 
+                <a href={`${speaker.linkedin}`} 
                 target="_blank"
                 style={{ color: 'var(--text-muted)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>
                   <Briefcase size={20} />
                 </a>
-                <a href="https://futurelab.ng" target="_blank" style={{ color: 'var(--text-muted)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>
+                <a href={`${speaker.link}`} target="_blank" style={{ color: 'var(--text-muted)', transition: 'color 0.3s ease' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-muted)'}>
                   <Globe size={20} />
                 </a>
               </div>

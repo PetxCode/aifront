@@ -45,8 +45,7 @@ const Hero = () => {
             <MapPin color="var(--primary)" size={24} />
             <div style={{ textAlign: 'left' }}>
               <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase' }}>Location</div>
-              <div style={{ fontWeight: '600' }}>1st Floor Eat24, <br/>
-              <span style={{fontSize:"14px"}}>22 Mba Street Near<br/>  Achakpo Bus Stop <br/>Ajegunle, Lagos</span>
+              <div style={{ fontWeight: '600' }}>2 Mba Street Near<br/>  Achakpo Bus Stop
               </div>
             </div>
           </div>
